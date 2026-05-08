@@ -228,6 +228,9 @@ celerybeat-schedule
 # mkdocs documentation
 /site
 
+# uv
+uv.lock
+
 # mypy
 .mypy_cache/
 .dmypy.json
