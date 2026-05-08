@@ -24,7 +24,7 @@ no_implicit_reexport = true
 
 [tool.ruff]
 line-length = 160
-target-version = "py36"
+target-version = "py37"
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
