@@ -27,8 +27,11 @@ jobs:
       - name: Run tests
         run: uv run pytest
       - name: Run mypy
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
         run: uv run mypy src
       - name: Run ruff lint
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
         run: uv run ruff check src tests
       - name: Run ruff format check
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
         run: uv run ruff format --check src tests
